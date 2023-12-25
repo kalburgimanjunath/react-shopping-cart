@@ -4,6 +4,7 @@ export default function ProductList() {
     <div className="productlist grid grid-cols-3 bg-white text-center">
       {PRODUCTS &&
         PRODUCTS.map((item) => {
+          const newImage = require("./../assets/images/" + item.filename);
           return (
             <div
               className="bg-gray-100 m-2 hover:bg-gray-200 hover:text-blue hover:cursor-pointer"
@@ -13,7 +14,7 @@ export default function ProductList() {
                 <img
                   width="200"
                   height="200"
-                  src={`/assets/images`}
+                  src={newImage}
                   // src="https://picsum.photos/seed/picsum/200/300"
                 />
               </div>
