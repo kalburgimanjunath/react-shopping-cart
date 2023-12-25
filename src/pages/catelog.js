@@ -5,9 +5,6 @@ export default function Catelog() {
   const CATEGORY = useCategoryFilter();
   return (
     <div>
-      <div className="flex justify-between m-2 font-bold">
-        <div>Product List</div>
-      </div>
       <div className="flex justify-arround text-wrap">
         {CATEGORY &&
           CATEGORY.length > 0 &&
