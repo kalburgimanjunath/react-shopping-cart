@@ -8,10 +8,6 @@ export default function App() {
       <Header />
       <Banner />
       <section className="p-2 bg-white h-full m-20 relative">
-        <div className="flex justify-between m-2 font-bold">
-          <div>Product List</div>
-          <div>Filter</div>
-        </div>
         <Routes>
           <Route path="/catelog" element={<Catelog />} />
           <Route path="/cart" element={<Cart />} />
