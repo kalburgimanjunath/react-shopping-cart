@@ -13,7 +13,8 @@ export default function ProductList() {
                 <img
                   width="200"
                   height="200"
-                  src="https://picsum.photos/seed/picsum/200/300"
+                  src={`/assets/images`}
+                  // src="https://picsum.photos/seed/picsum/200/300"
                 />
               </div>
               <div className="pt-2">
