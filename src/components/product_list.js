@@ -1,7 +1,7 @@
 import { PRODUCTS } from "../data/products";
 export default function ProductList() {
   return (
-    <div className="productlist grid grid-cols-3 bg-white text-center">
+    <div className="productlist grid grid-cols-3 md:grid-cols-2 bg-white text-center">
       {PRODUCTS &&
         PRODUCTS.map((item) => {
           const newImage = require("./../assets/images/" + item.filename);
