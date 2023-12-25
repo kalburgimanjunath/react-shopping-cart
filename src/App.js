@@ -2,6 +2,7 @@ import "./styles.css";
 import { Header, Banner } from "./components";
 import { Routes, Route } from "react-router-dom";
 import { Cart, Catelog, Home, Register, Signin } from "./pages";
+
 export default function App() {
   return (
     <div className="container bg-blue-100 w-full">
