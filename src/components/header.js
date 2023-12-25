@@ -3,7 +3,7 @@ export default function Header() {
   const leftmenus = ["home", "catelog", "cart"];
   const rightmenus = ["signin", "register"];
   return (
-    <div className="flex bg-blue-200 justify-between items-center shadow-lg w-full">
+    <div className="flex sticky top-0 z-10 bg-blue-200 justify-between items-center shadow-lg w-full">
       <div>
         <img
           width="50"

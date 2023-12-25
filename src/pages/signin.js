@@ -1,7 +1,7 @@
 export default function Signin() {
   return (
     <div>
-      <div className="justify-between m-2 font-bold">
+      <div className="bg-white justify-center m-2 p-5 font-bold max-w-80">
         <div>
           <div className="font-bold text-2xl mb-2">Signin</div>
         </div>

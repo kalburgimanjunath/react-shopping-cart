@@ -1,7 +1,7 @@
 export default function Register() {
   return (
     <div>
-      <div className="justify-between m-2 font-bold">
+      <div className="bg-white justify-between m-2 p-5 font-bold">
         <div>
           <div className="font-bold text-2xl mb-2">Register</div>
         </div>
