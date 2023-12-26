@@ -1,7 +1,13 @@
 import { PRODUCTS } from "../data/products";
+import { useSelector, useDispatch } from "react-redux";
+import { increment } from "../store/redux/CounterSlice";
 export default function ProductList() {
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+  console.log(count);
   return (
     <div className="productlist grid grid-cols-3 md:grid-cols-2 bg-white text-center rounded-lg">
+      Count:{count}
       {PRODUCTS &&
         PRODUCTS.map((item) => {
           const newImage = require("./../assets/images/" + item.filename);
@@ -23,7 +29,10 @@ export default function ProductList() {
                 <div>{item.description}</div>
                 <div>Price:{item.price}</div>
                 <div>{item.discount}% OFF</div>
-                <button className="hover:text-blue hover:font-bold bg-blue-300 rounded-lg p-2 ">
+                <button
+                  onClick={() => dispatch(increment())}
+                  className="hover:text-blue hover:font-bold bg-blue-300 rounded-lg p-2 "
+                >
                   Add to Cart
                 </button>
               </div>
