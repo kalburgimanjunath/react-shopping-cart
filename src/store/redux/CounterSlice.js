@@ -4,7 +4,7 @@ export const counterSlice = createSlice({
   initialState: { value: 0 },
   reducers: {
     increment(state) {
-      state.value + 1;
+      state.value++;
     },
     // todoToggled(state, action) {
     //   const todo = state.find((todo) => todo.id === action.payload);

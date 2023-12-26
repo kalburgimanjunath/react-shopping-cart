@@ -19,7 +19,7 @@ export default function Catelog() {
             );
           })}
       </div>
-      <ProductList />
+      <ProductList isCart={false} />
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import { ProductList } from "../components";
-
 export default function Cart() {
   return (
     <div>
@@ -8,7 +7,7 @@ export default function Cart() {
           Checkout
         </a>
       </div>
-      <ProductList />
+      <ProductList isCart={true} />
     </div>
   );
 }
