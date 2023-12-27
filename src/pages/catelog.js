@@ -1,4 +1,5 @@
 import { ProductList } from "../components";
+import { PRODUCTS } from "../data/products";
 // import React, { useEffect, useState } from "react";
 import useCategoryFilter from "../hooks/useCategoryFilter";
 export default function Catelog() {
@@ -19,7 +20,7 @@ export default function Catelog() {
             );
           })}
       </div>
-      <ProductList isCart={false} />
+      <ProductList isCart={false} products={PRODUCTS} />
     </div>
   );
 }
