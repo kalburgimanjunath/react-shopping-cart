@@ -1,7 +1,16 @@
 import "./styles.css";
 import { Header, Banner } from "./components";
 import { Routes, Route } from "react-router-dom";
-import { Cart, Catelog, Checkout, Home, Register, Signin } from "./pages";
+import {
+  About,
+  Books,
+  Cart,
+  Catelog,
+  Checkout,
+  Home,
+  Register,
+  Signin,
+} from "./pages";
 import { useState } from "react";
 import { CartContext } from "./context/CartContext";
 export default function App() {
@@ -13,6 +22,8 @@ export default function App() {
       <section className="p-2 h-full m-20 relative rounded-lg flex justify-center align-center">
         <CartContext.Provider value={cart}>
           <Routes>
+            <Route path="/books" element={<Books />} />
+            <Route path="/about" element={<About />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/catelog" element={<Catelog />} />
             <Route path="/cart" element={<Cart />} />

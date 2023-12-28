@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 export default function Header() {
-  const leftmenus = ["home", "catelog", "cart"];
+  const leftmenus = ["home", "about", "catelog", "books", "cart"];
   const rightmenus = ["signin", "register"];
   return (
     <div className="flex sticky top-0 z-10 bg-blue-200 justify-between items-center shadow-lg w-full">

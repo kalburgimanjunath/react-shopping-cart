@@ -4,4 +4,6 @@ import Register from "./register";
 import Signin from "./signin";
 import Home from "./home";
 import Checkout from "./checkout";
-export { Cart, Catelog, Register, Signin, Home, Checkout };
+import About from "./about";
+import Books from "./books";
+export { Books, Cart, Catelog, Register, Signin, Home, Checkout, About };
